@@ -1,3 +1,67 @@
+:root {
+    --background: rgb(239, 239, 255);
+    --bg: rgba(255, 255, 255, 0.3);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
 body {
     margin: 0;
+    background-color: var(--background);
+    font-family: "Circular Std Book";
 }
+
+#root {
+    position: relative;
+    min-height: 100vh;
+}
+
+.wrapper {
+    min-height: 93vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.alert{
+    &-warning {
+        background-color: var(--bg);
+        border-color: var(--border);
+    }
+    &-danger {
+        background-color: var(--bg);
+        border-color: var(--border);
+    }
+}
+
+.card {
+    padding: 40px 40px;
+    background-color: var(--bg);
+    border-radius: 10px;
+    border-color: var(--border);
+
+    &-header {
+        padding: 20px 20px;
+        background-color: var(--background);
+        border-color: var(--border);
+        border-radius: 10px !important;
+    }
+
+    &-body {
+        padding-top: 30px;
+
+    }
+}
+
+.card-body-data {
+    padding: 0px !important;
+}
+
+footer {
+    padding-top: 5px;
+    background-color: var(--bg);
+}
+
+
+
